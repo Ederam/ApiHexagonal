@@ -1,0 +1,16 @@
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\bin\Debug\net8.0\Aplicacion.deps.json
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\bin\Debug\net8.0\Aplicacion.dll
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\bin\Debug\net8.0\Aplicacion.pdb
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\bin\Debug\net8.0\Dominio.dll
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\bin\Debug\net8.0\Dominio.pdb
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.AssemblyReference.cache
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.AssemblyInfoInputs.cache
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.AssemblyInfo.cs
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.CoreCompileInputs.cache
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.sourcelink.json
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.Up2Date
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.dll
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\refint\Aplicacion.dll
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.pdb
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\ref\Aplicacion.dll

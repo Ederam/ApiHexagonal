@@ -1,0 +1,127 @@
+﻿
+Dame un ejemplo de api web en net 8 c# con arquitectura hexagonal, que se conecte con sqlserver y consulte datos de una tabla, especificando en que capa va cada uno de las clases e interfaces, mostrando los namespaces y using de cada clase, ademas describa de que tipo de proyecto deberia ser cada una de las capas, que maneje principios solid, patron CQRS con las mejores practicas de desarrollo
+
+Arquitectura Hexagonal
+
+Core (Domino o Aplicación): 
+Es el núcleo de la aplicación y no debe depender directamente de infraestructuras externas. 
+Solo define la lógica de negocio.
+
+Application Services: 
+Contiene casos de uso y puede ver la capa de dominio. 
+No debe depender de detalles de infraestructura.
+
+Adapters (Entradas y Salidas): 
+Son las interfaces con el mundo exterior (base de datos, API externas, UI). 
+Pueden depender de los Application Services.
+
+Infraestructura: 
+Aquí van las implementaciones de persistencia, comunicación con APIs, etc. 
+Puede depender de Application Services, pero no del núcleo de negocio.
+
+Razón de esta separación
+Independencia del dominio: Permite que los cambios en la infraestructura no afecten la lógica de negocio.
+
+Testabilidad: Al aislar la lógica de negocio, es más fácil hacer pruebas unitarias.
+
+Flexibilidad: Facilita cambiar bases de datos, frameworks o interfaces sin modificar el núcleo.
+
+Mejores prácticas y patrones de implementación
+Dependencia hacia adentro: Las capas externas dependen de las internas, nunca al revés.
+
+Uso de interfaces (Puertos y Adaptadores): 
+Define interfaces en el dominio y permite implementaciones en la infraestructura.
+Inversión de dependencias: Usa Dependency Injection para evitar acoplamientos directos.
+Aplicación de DDD (Domain-Driven Design): Organiza bien los agregados y las entidades del negocio.
+Eventos de dominio: Para comunicar cambios sin generar acoplamiento entre capas.
+CQRS y Mediator: Para separar consultas de comandos y reducir dependencias.
+
+https://copilot.microsoft.com/chats/X2G9oA5aMXhEvvULeTguE
+
+Creacion de Api de Net Core
+
+Conexion con repositorio para subir Primer Commit
+git init
+ignorar el folder .vs
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ederam/ApiHexagonal.git
+git push -u origin main
+
+Esquema de arquitectura hexagonal para el ejemplo
+
+/PedidosAPI
+│── /Core
+│   ├── /Dominio
+│   │   ├── Entidades
+│   │   ├── ValueObjects
+│   │   ├── Agregados
+│   ├── /Aplicacion
+│   │   ├── CasosDeUso
+│   │   ├── Interfaces (Puertos)
+│── /Infraestructura
+│   ├── Persistencia
+│   ├── Repositorios (Adaptadores)
+│── /Presentacion
+│   ├── Controladores (Adaptadores)
+│── /Configuracion
+│── Program.cs
+│── appsettings.json
+
+
+Agregar las capas que se van a utilizar
+
+Tipo de Proyecto para Cada Capa
+Dominio --> Core → Biblioteca de clases (.NET Class Library)
+Infraestructura → Biblioteca de clases (.NET Class Library)
+ApiHexagonal para el ejemplo --> Presentación → API Web ASP.NET Core
+Configuración → Proyecto principal (Startup)
+
+Orden Ejecutado
+Creacion de Capas
+	Dominio
+	Infraestructura
+	Aplicacion
+
+Se agrega cadena de conexion en archivo settings del api
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\appsettings.json
+
+Creacion de entidad en capa dominio/entidades
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Dominio\Entidades\Pedido.cs
+
+Creacion de Puertos (Interfaces en la Capa de Aplicación)
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\Interfaces\IPedidoRepository.cs
+
+Casos de Uso en la Capa de Aplicación
+Caso de Uso – Obtener Pedido
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\CasosDeUso\ObtenerPedidoUseCase.cs
+
+Implementación de la Infraestructura
+Repositorio con SQL Server
+AGregar referencias de 
+	Aplicacion.Interfaces;
+    Dominio.Entidades;
+    Infraestructura.Persistencia;
+	EntityFramework
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\Repositorios\PedidoRepository.cs
+
+Contexto de Base de Datos
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\Persistencia\AppDbContext.cs
+
+Implementación de la Capa de Presentación
+Controlador en la API Web
+Agregar referencias de proyectos
+	Dominio
+	Aplicacion
+
+Configuración en Program.cs
+
+validar conexion de BD
+"ConnectionStrings": {
+    "DefaultConnection": "Server=(LocalDb)\\MyServer2025;Database=GESTION_ESTUDIANTES;Integrated Security=True;TrustServerCertificate=True;"
+  }
+
+Ejecuta pero falta ajustar la tabla y las consultas
+
+
