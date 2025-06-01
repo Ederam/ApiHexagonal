@@ -15,6 +15,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Inyección de dependencias
 builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<ObtenerPedidoUseCase>();
+builder.Services.AddScoped<IUsuariosReactRepository, UsuarioReactRepository>();
+builder.Services.AddScoped<ObtenerUsuariosReactUseCase>();
 
 
 

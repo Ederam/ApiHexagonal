@@ -3,7 +3,6 @@ D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\ne
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\net8.0\ApiHexagonal.AssemblyInfoInputs.cache
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\net8.0\ApiHexagonal.AssemblyInfo.cs
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\net8.0\ApiHexagonal.csproj.CoreCompileInputs.cache
-D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\net8.0\ApiHexagonal.MvcApplicationPartsAssemblyInfo.cs
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\net8.0\ApiHexagonal.MvcApplicationPartsAssemblyInfo.cache
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\net8.0\ApiHexagonal.sourcelink.json
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\bin\Debug\net8.0\appsettings.Development.json
@@ -78,6 +77,7 @@ D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\bin\Debug\ne
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\bin\Debug\net8.0\Aplicacion.pdb
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\bin\Debug\net8.0\Dominio.pdb
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\bin\Debug\net8.0\Infraestructura.pdb
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\net8.0\ApiHexagonal.MvcApplicationPartsAssemblyInfo.cs
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\net8.0\scopedcss\bundle\ApiHexagonal.styles.css
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\net8.0\staticwebassets.build.json
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\ApiHexagonal\obj\Debug\net8.0\staticwebassets.build.json.cache

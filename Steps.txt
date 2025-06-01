@@ -124,4 +124,20 @@ validar conexion de BD
 
 Ejecuta pero falta ajustar la tabla y las consultas
 
+AGregar funcionalidad para obtener UsuariosReact de la tabla de Gestion de Estudientes
+
+1. Crear entidad Usuario en la capa de Dominio
+2. Crear interfaz IUsuariosReactRepository en la capa de Aplicación
+3. Crear caso de uso ObtenerUsuarioUseCase en la capa de Aplicación
+4. Agregar la tabla para la persistencia de UsuariosReact en la base de datos
+5. Implementar UsuarioReactRepository en la capa de Infraestructura
+6. Crear controlador UsuarioController en la capa de Presentación
+7. Configurar la inyección de dependencias en Program.cs
+8. Probar la API para obtener usuarios
+
+Se ajustan valores en las propiedades de la entidad UsuarioReact 
+y se crea el repositorio para interactuar con la base de datos.
+Se agrega un constructor sin parámetros para la entidad UsuarioReact
+
+
 

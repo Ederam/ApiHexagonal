@@ -12,6 +12,8 @@ namespace Infraestructura.Persistencia
     {
         public DbSet<Pedido> Pedidos { get; set; }
 
+        public DbSet<UsuariosReact> UsuariosReact { get; set; }
+
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
     }
 }
