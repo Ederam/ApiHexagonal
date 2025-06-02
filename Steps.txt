@@ -6,6 +6,12 @@ Arquitectura Hexagonal
 Core (Domino o Aplicación): 
 Es el núcleo de la aplicación y no debe depender directamente de infraestructuras externas. 
 Solo define la lógica de negocio.
+Contiene las entidades y modelos.
+Define los contratos y las interfaces.
+
+Capa de Aplicación (Application)
+Implementa el patrón CQRS con Queries y Commands.
+Maneja la lógica de negocio y casos de uso.
 
 Application Services: 
 Contiene casos de uso y puede ver la capa de dominio. 
@@ -15,9 +21,14 @@ Adapters (Entradas y Salidas):
 Son las interfaces con el mundo exterior (base de datos, API externas, UI). 
 Pueden depender de los Application Services.
 
+Capa de Entrada (Adapters)
+Implementa controladores o cualquier servicio expuesto (REST API, GraphQL, etc.).
+
 Infraestructura: 
 Aquí van las implementaciones de persistencia, comunicación con APIs, etc. 
 Puede depender de Application Services, pero no del núcleo de negocio.
+Implementa la comunicación con SQL Server usando ADO.NET.
+Define los repositorios y adaptadores externos.
 
 Razón de esta separación
 Independencia del dominio: Permite que los cambios en la infraestructura no afecten la lógica de negocio.
@@ -139,5 +150,33 @@ Se ajustan valores en las propiedades de la entidad UsuarioReact
 y se crea el repositorio para interactuar con la base de datos.
 Se agrega un constructor sin parámetros para la entidad UsuarioReact
 
+--Implementacion de consumo de base de datos a traves de ADO.NET
 
+Dame un ejemplo de consumo de base de datos de sql server con ADO para obtener todos los datos de una tabla en arquitectura hexagonal en net 8 c#, utilizando patron CQRS, Inyeccion de dependencias, principios SOLID y especificame en que capa quedaria cada clase e interfaz
+
+https://copilot.microsoft.com/chats/nYb8PUC9prRxF4ZGZpbLr
+
+======Paso a paso para consumir la tabla mediante ADO.NET
+
+Creacion de entidad UsuarioReactToAdo 
+	Se dejan las mismas propiedades
+Creacion de interfaz de repository en el dominio IUsuarioReactToAdoRepository
+Capa de Aplicación (Application)
+Implementamos el Query Handler para obtener los usuarios usando CQRS:
+Creacion de folder para Queries en la capa de Aplicación
+	Creacion de clase ObtenerUsuariosReactToAdoQuery
+	AGregar Nuget de MediatR para el manejo de consultas
+	Ajustar metodos e implementar la interfaz correspondiente
+Capa de Infraestructura (Infrastructure)
+Aquí conectamos con SQL Server usando ADO.NET:
+	Agregar repositorio UsuarioReactToAdoRepository en infraestructura
+	Agregar using de using Microsoft.Extensions.Configuration 
+	Agregar using de System.Data.SqlClient
+	Agregar consulta SQL para obtener los datos de la tabla UsuariosReact
+Capa de Entrada (Adapters)
+	Aquí creamos un Controller en ASP.NET Core para exponer el endpoint:
+Configuración de Dependencias en Program.cs
+Para inyectar dependencias y aplicar principios SOLID:
+	builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+	builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ObtenerUsuariosQuery).Assembly));
 

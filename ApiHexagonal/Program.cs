@@ -1,5 +1,7 @@
 using Aplicacion.CasosDeUso;
 using Aplicacion.Interfaces;
+using Aplicacion.Queries;
+using Dominio.Repositorios;
 using Infraestructura.Persistencia;
 using Infraestructura.Repositorios;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +19,9 @@ builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<ObtenerPedidoUseCase>();
 builder.Services.AddScoped<IUsuariosReactRepository, UsuarioReactRepository>();
 builder.Services.AddScoped<ObtenerUsuariosReactUseCase>();
+//Interfaz de aplicacion y repositorio de Infraestructura
+builder.Services.AddScoped<IUsuarioReactToAdoRepository, UsuarioReactToAdoRepository>();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ObtenerUsuariosReactToAdoQuery).Assembly));
 
 
 

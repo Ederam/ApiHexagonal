@@ -1,9 +1,3 @@
-D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.csproj.AssemblyReference.cache
-D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
-D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.AssemblyInfoInputs.cache
-D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.AssemblyInfo.cs
-D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.csproj.CoreCompileInputs.cache
-D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.sourcelink.json
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\bin\Debug\net8.0\Infraestructura.deps.json
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\bin\Debug\net8.0\Infraestructura.dll
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\bin\Debug\net8.0\Infraestructura.pdb
@@ -11,6 +5,12 @@ D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\bin\Debug
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\bin\Debug\net8.0\Dominio.dll
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\bin\Debug\net8.0\Aplicacion.pdb
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\bin\Debug\net8.0\Dominio.pdb
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.csproj.AssemblyReference.cache
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.AssemblyInfoInputs.cache
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.AssemblyInfo.cs
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.csproj.CoreCompileInputs.cache
+D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.sourcelink.json
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraest.8F2C356E.Up2Date
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\Infraestructura.dll
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Infraestructura\obj\Debug\net8.0\refint\Infraestructura.dll

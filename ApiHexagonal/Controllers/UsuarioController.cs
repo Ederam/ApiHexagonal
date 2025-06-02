@@ -21,4 +21,5 @@ namespace ApiHexagonal.Controllers
             return usuarioReact != null ? Ok(usuarioReact) : NotFound();
         }
     }
+
 }
