@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "ApiHexagonal.Controllers.FechasController",
+    "Method": "MapearFechas",
+    "RelativePath": "api/Fechas/mapear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fechasDto",
+        "Type": "System.Collections.Generic.List\u00601[[Aplicacion.DTOs.FechasPropuestasDto, Aplicacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Dominio.Entidades.FechaPropuesta, Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ApiHexagonal.Controllers.PedidoController",
     "Method": "ObtenerPedido",
     "RelativePath": "api/pedidos/{id}",

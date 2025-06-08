@@ -10,3 +10,15 @@ D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Dominio\obj\Debug\net8.0\
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Dominio\obj\Debug\net8.0\refint\Dominio.dll
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Dominio\obj\Debug\net8.0\Dominio.pdb
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Dominio\obj\Debug\net8.0\ref\Dominio.dll
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\bin\Debug\net8.0\Dominio.deps.json
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\bin\Debug\net8.0\Dominio.dll
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\bin\Debug\net8.0\Dominio.pdb
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\obj\Debug\net8.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\obj\Debug\net8.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\obj\Debug\net8.0\Dominio.AssemblyInfo.cs
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\obj\Debug\net8.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\obj\Debug\net8.0\Dominio.sourcelink.json
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\obj\Debug\net8.0\Dominio.dll
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\obj\Debug\net8.0\refint\Dominio.dll
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\obj\Debug\net8.0\Dominio.pdb
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Dominio\obj\Debug\net8.0\ref\Dominio.dll

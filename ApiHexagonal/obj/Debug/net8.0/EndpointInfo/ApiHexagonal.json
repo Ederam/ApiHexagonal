@@ -5,6 +5,72 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Fechas/mapear": {
+      "post": {
+        "tags": [
+          "Fechas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/FechasPropuestasDto"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/FechasPropuestasDto"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/FechasPropuestasDto"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FechaPropuesta"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FechaPropuesta"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FechaPropuesta"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/pedidos/{id}": {
       "get": {
         "tags": [
@@ -131,6 +197,36 @@
   },
   "components": {
     "schemas": {
+      "FechaPropuesta": {
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          },
+          "observacion": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FechasPropuestasDto": {
+        "type": "object",
+        "properties": {
+          "fechaEstimadaEntrega": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "observacion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UsuarioReactToAdo": {
         "type": "object",
         "properties": {

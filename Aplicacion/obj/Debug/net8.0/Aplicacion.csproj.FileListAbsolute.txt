@@ -14,3 +14,19 @@ D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\refint\Aplicacion.dll
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.pdb
 D:\ER-DEV\.Net\API\Arquitectura Hexagonal\ApiHexagonal\Aplicacion\obj\Debug\net8.0\ref\Aplicacion.dll
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\bin\Debug\net8.0\Aplicacion.deps.json
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\bin\Debug\net8.0\Aplicacion.dll
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\bin\Debug\net8.0\Aplicacion.pdb
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\bin\Debug\net8.0\Dominio.dll
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\bin\Debug\net8.0\Dominio.pdb
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.AssemblyReference.cache
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.AssemblyInfoInputs.cache
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.AssemblyInfo.cs
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.sourcelink.json
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.Up2Date
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.dll
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\refint\Aplicacion.dll
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\Aplicacion.pdb
+C:\Users\edercramirezc\DEV-ER\.Net\ApiHexagonal\Aplicacion\obj\Debug\net8.0\ref\Aplicacion.dll

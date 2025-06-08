@@ -180,3 +180,104 @@ Para inyectar dependencias y aplicar principios SOLID:
 	builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 	builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ObtenerUsuariosQuery).Assembly));
 
+
+Ejemplo de uso de automaper
+Claro, aquí tienes el ejemplo aplicado a una arquitectura hexagonal, usando los principios de DDD y buenas prácticas, 
+donde mapeamos una lista de DTOs a entidades de dominio.
+
+Escenario:
+Vas a recibir una lista de FechasPropuestasDto desde un Puerto de Entrada (Aplicación) y 
+necesitas convertirla en una lista de FechaPropuesta que representa una entidad del Dominio.
+
+Estructura de carpetas (Arquitectura Hexagonal):
+Copiar
+Editar
+├── Dominio/
+│   └── Entidades/
+│       └── FechaPropuesta.cs
+│
+├── Aplicacion/
+│   ├── DTOs/
+│   │   └── FechasPropuestasDto.cs
+│   ├── Servicios/
+│   │   └── Mapeadores/
+│   │       └── FechaPropuestaMapper.cs
+│   └── CasosUso/
+│       └── ManejarFechaPropuesta.cs
+
+Entidad en Dominio:
+namespace MiProyecto.Dominio.Entidades
+{
+    public class FechaPropuesta
+    {
+        public DateTime Fecha { get; private set; }
+        public string Observacion { get; private set; }
+
+        private FechaPropuesta(DateTime fecha, string observacion)
+        {
+            Fecha = fecha;
+            Observacion = observacion;
+        }
+
+        public static FechaPropuesta Crear(DateTime fecha, string observacion)
+        {
+            if (fecha < DateTime.Today)
+                throw new ArgumentException("La fecha no puede estar en el pasado.");
+
+            return new FechaPropuesta(fecha, observacion);
+        }
+    }
+}
+
+DTO en Aplicación:
+namespace MiProyecto.Aplicacion.DTOs
+{
+    public class FechasPropuestasDto
+    {
+        public DateTime FechaEstimadaEntrega { get; set; }
+        public string Observacion { get; set; }
+    }
+}
+
+3. Mapper en Aplicación (servicio de infraestructura de mapeo):
+using MiProyecto.Aplicacion.DTOs;
+using MiProyecto.Dominio.Entidades;
+
+namespace MiProyecto.Aplicacion.Servicios.Mapeadores
+{
+    public static class FechaPropuestaMapper
+    {
+        public static List<FechaPropuesta> MapearDesdeDto(List<FechasPropuestasDto> dtos)
+        {
+            if (dtos == null) return new();
+
+            return dtos
+                .Select(dto => FechaPropuesta.Crear(dto.FechaEstimadaEntrega, dto.Observacion))
+                .ToList();
+        }
+    }
+}
+
+Caso de uso en Aplicación:
+using MiProyecto.Aplicacion.DTOs;
+using MiProyecto.Aplicacion.Servicios.Mapeadores;
+using MiProyecto.Dominio.Entidades;
+
+namespace MiProyecto.Aplicacion.CasosUso
+{
+    public class ManejarFechaPropuesta
+    {
+        public void Ejecutar(List<FechasPropuestasDto> dtos)
+        {
+            List<FechaPropuesta> entidades = FechaPropuestaMapper.MapearDesdeDto(dtos);
+
+            // Aquí podrías llamar a un Puerto de salida o procesar la lógica de negocio
+        }
+    }
+}
+
+Ventajas en arquitectura hexagonal:
+Capa	Rol
+Dominio	Contiene las reglas e invariantes de la entidad FechaPropuesta.
+Aplicación	Orquesta el caso de uso y transforma los DTOs a entidades.
+Servicios (infraestructura)	Maneja el mapeo como una responsabilidad aparte, sin contaminar dominio.

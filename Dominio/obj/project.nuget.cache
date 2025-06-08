@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sbtstqyTPa8=",
+  "dgSpecHash": "VGqTUcItOwM=",
   "success": true,
-  "projectFilePath": "D:\\ER-DEV\\.Net\\API\\Arquitectura Hexagonal\\ApiHexagonal\\Dominio\\Dominio.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\edercramirezc\\DEV-ER\\.Net\\ApiHexagonal\\Dominio\\Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edercramirezc\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.300\\microsoft.net.sdk.compilers.toolset.9.0.300.nupkg.sha512"
+  ],
   "logs": []
 }

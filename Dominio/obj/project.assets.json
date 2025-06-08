@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\CAMILO\\.nuget\\packages\\": {},
+    "C:\\Users\\edercramirezc\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ER-DEV\\.Net\\API\\Arquitectura Hexagonal\\ApiHexagonal\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\edercramirezc\\DEV-ER\\.Net\\ApiHexagonal\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "D:\\ER-DEV\\.Net\\API\\Arquitectura Hexagonal\\ApiHexagonal\\Dominio\\Dominio.csproj",
-      "packagesPath": "C:\\Users\\CAMILO\\.nuget\\packages\\",
-      "outputPath": "D:\\ER-DEV\\.Net\\API\\Arquitectura Hexagonal\\ApiHexagonal\\Dominio\\obj\\",
+      "projectPath": "C:\\Users\\edercramirezc\\DEV-ER\\.Net\\ApiHexagonal\\Dominio\\Dominio.csproj",
+      "packagesPath": "C:\\Users\\edercramirezc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edercramirezc\\DEV-ER\\.Net\\ApiHexagonal\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\CAMILO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\edercramirezc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -68,6 +68,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+            "version": "[9.0.300, 9.0.300]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
